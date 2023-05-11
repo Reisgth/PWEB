@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Atividade 14</title>
+
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <script src="index.js"></script>
+
+</head>
+
+<body>
+    <form name="formulario1" id="formulario1" onsubmit="return validarDados();">
+        <div>
+            <H1>Formulário principal
+                <br>_________________________<br>
+            </H1>
+        </div>
+        <div id="principal" width=200 heigth=200>
+            Nome Completo:
+            <br><input name="idNome" type="text" id="idNome" size="52" maxlength="150">
+            <br>
+            <br> E-Mail :
+            <br><input name="idEmail" type="email" id="idEmail" size="52" maxlength="150">
+            <br>
+            <br> Mensagem :
+            <br><textarea name="idMensagem" cols="50" rows="8" id="idMensagem" value="" input></textarea>
+            <br><br>
+            <h2>Pesquisa:</h2>
+            <h5 id="texto"> Primeira vez nesta pagina???</h5>
+            Sim <input type="radio" name="btnRadio" id="idSim" onclick="jaVisitou()">
+            Não <input type="radio" name="btnRadio" id="idNao" onclick="naoVisitou()">
+            <br><br><br><br>
+            <input name="Submit" type="submit" form="formulario1" value="Enviar">
+            <input name="Reset" type="reset" form="formulario1" value="limpar">
+        </div>
+    </form>
+</body>
+
+</html>
